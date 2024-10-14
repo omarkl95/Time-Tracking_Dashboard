@@ -1,0 +1,116 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="profile-parent-card">
+      <div class="profile-child-card">
+        <div class="profile-data">
+          <img
+            src="assets/images/image-jeremy.png"
+            alt=""
+            class="profile-img"
+          />
+          <div class="profile-details">
+            <p>Report for</p>
+            <h1>Best Sales</h1>
+          </div>
+        </div>
+      </div>
+      <div class="Time-periods">
+        <p id="Daily">Daily</p>
+        <p id="Weekly">Weekly</p>
+        <p id="Monthly">Monthly</p>
+      </div>
+    </div>
+
+    @for(post of data; track post.id){
+    <div class="work-parent-card parent-card">
+      <!-- <img src="./images/icon-work.svg" alt="" class="icons" /> -->
+      <div class="child-card">
+        <div class="heading">
+          <span class="title">{{ post.category }}</span>
+          <img src="assets/images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time-periods">
+          <span class="time">{{ post.price }}$</span>
+          <div class="store">
+            <p class="previous-time">{{ post.title }}</p>
+            <p class="store-count">InStore <br />{{ post.rating.count }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    }@empty {
+    <p>No posts</p>
+    }
+
+    <!-- <div class="play-parent-card parent-card">
+      <img src="./images/icon-play.svg" alt="" class="icons" />
+      <div class="child-card">
+        <div class="heading">
+          <span class="title">Play</span>
+          <img src="./images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time-periods">
+          <span class="time"></span>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+    </div>
+    <div class="study-parent-card parent-card">
+      <img src="./images/icon-study.svg" alt="" class="icons" />
+      <div class="child-card">
+        <div class="heading">
+          <span class="title">Study</span>
+          <img src="./images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time-periods">
+          <span class="time"></span>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise-parent-card parent-card">
+      <img src="./images/icon-exercise.svg" alt="" class="icons" />
+      <div class="child-card">
+        <div class="heading">
+          <span class="title">Exercise</span>
+          <img src="./images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time-periods">
+          <span class="time"></span>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-parent-card parent-card">
+      <img src="./images/icon-social.svg" alt="" class="icons" />
+      <div class="child-card">
+        <div class="heading">
+          <span class="title">Social</span>
+          <img src="./images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time-periods">
+          <span class="time"></span>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="selfcare-parent-card parent-card">
+      <img src="./images/icon-self-care.svg" alt="" class="icons" />
+      <div class="child-card">
+        <div class="heading">
+          <span class="title">Self-Care</span>
+          <img src="./images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time-periods">
+          <span class="time"></span>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+  </div>
+</div>
